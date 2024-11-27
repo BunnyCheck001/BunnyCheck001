@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ရွှေဦးကြီး | Checkout</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="ရွှေဦးကြီး Logo">
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="cart.html">Cart</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Checkout Section -->
+  <section class="checkout-section">
+    <div class="container">
+      <h2>Checkout</h2>
+
+      <!-- Checkout Form -->
+      <form action="order_confirmation.html" method="POST" class="checkout-form">
+        <div class="billing-details">
+          <h3>Billing Information</h3>
+
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+          <label for="address">Shipping Address</label>
+          <textarea id="address" name="address" placeholder="Enter your shipping address" required></textarea>
+        </div>
+
+        <!-- Payment Information -->
+        <div class="payment-details">
+          <h3>Payment Information</h3>
+
+          <label for="payment-method">Payment Method</label>
+          <select id="payment-method" name="payment-method" required>
+            <option value="credit-card">Credit Card</option>
+            <option value="mobile-money">Mobile Money (MPT, Ooredo)</option>
+            <option value="cash-on-delivery">Cash on Delivery</option>
+          </select>
+
+          <label for="card-number">Card Number (if applicable)</label>
+          <input type="text" id="card-number" name="card-number" placeholder="Enter your card number" disabled>
+
+          <label for="expiration-date">Expiration Date (MM/YY)</label>
+          <input type="text" id="expiration-date" name="expiration-date" placeholder="MM/YY" disabled>
+
+          <label for="cvv">CVV</label>
+          <input type="text" id="cvv" name="cvv" placeholder="Enter CVV" disabled>
+        </div>
+
+        <!-- Order Summary -->
+        <div class="order-summary">
+          <h3>Order Summary</h3>
+          <table class="summary-table">
+            <thead>
+              <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Example Cart Item -->
+              <tr>
+                <td>Product Name 1</td>
+                <td>₭ 25,000</td>
+                <td>1</td>
+                <td>₭ 25,000</td>
+              </tr>
+
+              <tr>
+                <td>Product Name 2</td>
+                <td>₭ 15,000</td>
+                <td>2</td>
+                <td>₭ 30,000</td>
+              </tr>
+
+              <!-- Add more products dynamically if needed -->
+            </tbody>
+          </table>
+
+          <p><strong>Total Price: </strong>₭ 55,000</p>
+        </div>
+
+        <!-- Submit Order -->
+        <button type="submit" class="btn submit-order-btn">Place Order</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2024 ရွှေဦးကြီး | အခွင့်အရေးအားလုံးကို မူပိုင်သည်။</p>
+      <p>ဆက်သွယ်ရန်: 09971888823, 09756316032 | လိပ်စာ: ဝေါမြို့သစ်ရှေ့ ၊ အရှေ့ဘက်ကမ်း</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

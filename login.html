@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ရွှေဦးကြီး | Login</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="ရွှေဦးကြီး Logo">
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="register.html">Register</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Login Form Section -->
+  <section class="login-section">
+    <div class="container">
+      <h2>Login</h2>
+      <form action="login_process.php" method="POST" class="login-form">
+        <label for="email">အီးမေးလ်</label>
+        <input type="email" id="email" name="email" placeholder="အီးမေးလ်ရိုက်ပါ" required>
+
+        <label for="password">စကားဝှက်</label>
+        <input type="password" id="password" name="password" placeholder="စကားဝှက်ရိုက်ပါ" required>
+
+        <button type="submit" class="btn">Login</button>
+        <div class="extra-links">
+          <a href="forgot_password.html">စကားဝှက်မေ့နေပါသလား?</a>
+          <a href="register.html">အကောင့်မရှိဘူးလား? အကောင့်ဖွင့်ရန်</a>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2024 ရွှေဦးကြီး | အခွင့်အရေးအားလုံးကို မူပိုင်သည်။</p>
+      <p>ဆက်သွယ်ရန်: 09971888823, 09756316032 | လိပ်စာ: ဝေါမြို့သစ်ရှေ့ ၊ အရှေ့ဘက်ကမ်း</p>
+    </div>
+  </footer>
+</body>
+</html>
